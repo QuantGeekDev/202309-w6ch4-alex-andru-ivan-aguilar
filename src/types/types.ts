@@ -8,3 +8,8 @@ export interface CharacterDataType {
 export interface KingData extends CharacterDataType {
   yearsOfReign: number;
 }
+
+export interface FighterData extends CharacterDataType {
+  dexterity: number;
+  weapon: string;
+}
