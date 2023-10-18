@@ -1,3 +1,6 @@
+import type Character from "../Character/Character";
+import type { Fighter } from "../Fighter/Fighter";
+
 export interface CharacterDataType {
   name: string;
   family: string;
@@ -16,5 +19,9 @@ export interface FighterData extends CharacterDataType {
 
 export interface SquireData extends CharacterDataType {
   kissAssLevel: number;
-  serves: string;
+  serves: Fighter;
+}
+
+export interface AdvisorData extends CharacterDataType {
+  adviseCharacter: Character;
 }
