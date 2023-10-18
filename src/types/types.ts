@@ -14,7 +14,7 @@ export interface FighterData extends CharacterDataType {
   weapon: string;
 }
 
-export interface Squire extends CharacterDataType {
+export interface SquireData extends CharacterDataType {
   kissAssLevel: number;
   serves: string;
 }
