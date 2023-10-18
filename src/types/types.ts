@@ -13,3 +13,8 @@ export interface FighterData extends CharacterDataType {
   dexterity: number;
   weapon: string;
 }
+
+export interface Squire extends CharacterDataType {
+  kissAssLevel: number;
+  serves: string;
+}
