@@ -4,9 +4,9 @@ import type { AdvisorData } from "../types/types";
 export class Advisor extends Character {
   adviseCharacter;
 
-  constructor(data: AdvisorData) {
+  constructor(data: AdvisorData, adviseCharacter: Character) {
     super(data);
-    this.adviseCharacter = data.adviseCharacter;
+    this.adviseCharacter = adviseCharacter;
   }
 
   communicate(): string {

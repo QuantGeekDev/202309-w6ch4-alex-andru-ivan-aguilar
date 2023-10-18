@@ -5,9 +5,9 @@ export class Fighter extends Character {
   dexterity;
   weapon;
 
-  constructor(data: FighterData) {
+  constructor(data: FighterData, dexterity: number, weapon: string) {
     super(data);
-    this.dexterity = data.dexterity;
-    this.weapon = data.weapon;
+    this.dexterity = dexterity;
+    this.weapon = weapon;
   }
 }

@@ -4,8 +4,8 @@ import { type KingData } from "../types/types";
 export class King extends Character {
   yearsOfReign;
 
-  constructor(data: KingData) {
+  constructor(data: KingData, yearsOfReign: number) {
     super(data);
-    this.yearsOfReign = data.yearsOfReign;
+    this.yearsOfReign = yearsOfReign;
   }
 }
