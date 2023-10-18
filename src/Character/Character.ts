@@ -1,16 +1,9 @@
-interface CharacterDataType {
-  name: string;
-  family: string;
-  age: number;
-  imageSource: string;
-}
+import type { CharacterDataType } from "../types/types";
+class Character {
+  isAlive: boolean;
+  series: string;
 
-export class Character {
-  isAlive = true;
-  series = "Game of Thrones";
-  characterData;
-
-  constructor(characterData: CharacterDataType) {
+  constructor(public characterData: CharacterDataType) {
     this.characterData = characterData;
   }
 
