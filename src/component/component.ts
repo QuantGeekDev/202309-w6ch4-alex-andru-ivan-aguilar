@@ -1,4 +1,3 @@
-
 abstract class Component {
   protected readonly element: Element;
   protected readonly parentElement: Element;
@@ -9,16 +8,16 @@ abstract class Component {
     this.element.className = className;
   }
 
-  public render(){
+  public render() {
     if (this.parentElement === undefined) {
-      throw Error("there is no parentElemen")
+      throw Error("there is no parentElemen");
     }
 
     this.parentElement.appendChild(this.element);
     this.populate();
   }
 
-  protected abstract populate() void;
+  protected abstract populate(): void;
 }
 
 export default Component;
