@@ -12,6 +12,8 @@ const joffreyCharacterData = {
   yearsOfReign: 2,
 };
 
+const joffrey = new King(joffreyCharacterData, 2);
+
 const jaimeCharacterData = {
   id: 2,
   name: "Jaime",
@@ -21,6 +23,8 @@ const jaimeCharacterData = {
   dexterity: 7,
   weapon: "sword",
 };
+
+const jaime = new Fighter(jaimeCharacterData, 7, "sword");
 
 const daenerysCharacterData = {
   id: 3,
@@ -32,6 +36,8 @@ const daenerysCharacterData = {
   weapon: "dragons",
 };
 
+const daenerys = new Fighter(daenerysCharacterData, 10, "dragons");
+
 const tyrionCharacterData = {
   id: 4,
   name: "Tyrion",
@@ -40,6 +46,8 @@ const tyrionCharacterData = {
   imageSource: "tyrion.jpg",
   adviseCharacter: daenerys,
 };
+
+const tyrion = new Advisor(tyrionCharacterData, daenerys);
 
 const bronnCharacterData = {
   id: 5,
@@ -51,10 +59,7 @@ const bronnCharacterData = {
   serves: jaime,
 };
 
-const joffrey = new King(joffreyCharacterData, 2);
-const jaime = new Fighter(jaimeCharacterData, 7, "sword");
-const daenerys = new Fighter(daenerysCharacterData, 10, "dragons");
-const tyrion = new Advisor(tyrionCharacterData, daenerys);
 const bronn = new Squire(bronnCharacterData);
+
 
 export const characters = [jaime, joffrey, daenerys, tyrion, bronn];
