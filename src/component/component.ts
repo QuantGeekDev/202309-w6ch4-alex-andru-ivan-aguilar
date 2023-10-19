@@ -9,10 +9,6 @@ abstract class Component {
   }
 
   public render() {
-    if (this.parentElement === undefined) {
-      throw Error("there is no parentElemen");
-    }
-
     this.parentElement.appendChild(this.element);
     this.populate();
   }
