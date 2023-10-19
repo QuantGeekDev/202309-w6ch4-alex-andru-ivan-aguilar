@@ -1,8 +1,15 @@
 import Component from "../component/component.js";
-
+import CharactersCards from "../CharactersCards/CharactersCards.js";
 class App extends Component {
   protected populate(): void {
-    throw new Error("Method not implemented.");
+    const div = document.querySelector("div")!;
+    const charactersCards = new CharactersCards(
+      div,
+      "ul",
+      "characters-list row list-unstyled",
+    );
+
+    charactersCards.render();
   }
 }
 
