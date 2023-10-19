@@ -11,12 +11,12 @@ class CharacaterCard extends Component {
 
   protected populate(): void {
     const { name, family, age, imageSource } = this.characterData;
-    this.element.innerHTML = `<li class="col">
+    this.element.innerHTML = `
         <article class="character">
           <div class="card charactercard">
             <img src="img/${imageSource}" alt="${name} and ${family}" class="characterpicture card-img-top">
             <div class="card-body">
-              <h2 class="charactername card-title h4">${name} &amp; ${family}</h2>
+              <h2 class="charactername card-title h4">${name} ${family}</h2>
               <div class="characterinfo">
                 <ul class="list-unstyled">
                   <li>Age: ${age} yrs</li>
@@ -30,7 +30,7 @@ class CharacaterCard extends Component {
             </div>
           </div>
         </article>
-      </li>`;
+`;
   }
 }
 
